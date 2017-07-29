@@ -1,7 +1,20 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background-color: tan;
+  border-radius: 20px;
+  width: 50%;
+  height: 100px;
+  list-style-type: none;
+}
+
+#name {
+  width: 105%;
+  background-color: brown;
+  margin-left:-2.5%;
+  border-radius: 10px;
+  height: 25px;
+  text-align: center;
 }
 
 .label {
@@ -16,4 +29,18 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+#delete {
+  background-color: red;
+  border-radius: 10px;
+  width: 105%;
+  margin-left:-2.5%;
+}
+
+#order {
+  background-color: green;
+  border-radius: 10px;
+  width: 105%;
+  margin-left:-2.5%;
 }
