@@ -6,11 +6,11 @@
   {{#each burgers}}
     {{#unless this.devoured}}
       <li>
-        {{this.name}}
+        {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
-          <button type="submit">Feeding Time!</button>
+          <button type="submit">Eat up!</button>
         </form>
 
         {{> burgers/delete-burger}}
@@ -25,11 +25,11 @@
   {{#each burgers}}
     {{#if this.devoured}}
       <li>
-        {{this.name}}
+        {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="false">
-          <button type="submit">EAT UP!</button>
+          <button type="submit">Order Again!</button>
         </form>
 
         {{> burgers/delete-burger}}
@@ -47,9 +47,9 @@
   </div>
 
   <div class="form-group">
-    <label for="eaten">Eaten?</label><br>
+    <label for="eaten">Ordered or Eaten?</label><br>
     <input type="radio" name="devoured" value="1" checked> Eaten!<br>
-    <input type="radio" name="devoured" value="0"> Available
+    <input type="radio" name="devoured" value="0"> Place Order
   </div>
 
   <button type="submit">Add Burger</button>
