@@ -1,23 +1,22 @@
 <div id="container">
 <h1>Eat the Burgers!</h1>
 
-<h2>Burgers you can eat!</h2>
+<h2>Your current orders!</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless this.devoured}}
       <li>
         <div id="bunTop"></div>
-        <div id="name">
-        {{this.burger_name}}
-        </div>
-
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
           <button id="order" type="submit">Eat up!</button>
         </form>
 
         {{> burgers/delete-burger}}
+        <div id="name">
+        {{this.burger_name}}
+        </div>
         <div id="bunBottom"></div>
       </li>
     {{/unless}}
@@ -32,15 +31,15 @@
     {{#if this.devoured}}
       <li id="eaten">
         <div id="bunTop"></div>
-        <div id="name">
-        {{this.burger_name}}
-        </div>
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="false">
           <button id="order" type="submit">Order Again!</button>
         </form>
 
         {{> burgers/delete-burger}}
+        <div id="name">
+        {{this.burger_name}}
+        </div>
         <div id="bunBottom"></div>
       </li>
     {{/if}}
@@ -48,20 +47,20 @@
 </ul>
 <br>
 
-<h2>Eat the burger!</h2>
+<h2>Order your burgers here!</h2>
 <form class="create-update-form" action="/" method="POST">
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <input type="text" id="ca" name="name" required>
   </div>
 
   <div class="form-group">
     <label for="eaten">Ordered or Eaten?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Eaten!<br>
-    <input type="radio" name="devoured" value="0"> Place Order
+    <input type="radio" name="devoured" value="1"> Eaten!<br>
+    <input type="radio" name="devoured" value="0" checked> Place Order
   </div>
 
-  <button type="submit">Eat da Burger</button>
+  <button id="eat" type="submit">Place Order/ Eat the Burger</button>
 </form>
 </div>
