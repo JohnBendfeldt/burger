@@ -16,8 +16,8 @@ To run this app locally navigate to the directory you want and clone the reposit
 	
 Next, install the app dependencies:
 
-		cd burger
-		npm install
+	cd burger
+	npm install
 	
 Now you can run the server:
 
