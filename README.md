@@ -4,7 +4,6 @@ This app uses a MySQL database to keep track of the burger that are ordered and 
 
 This is a simple full stack application that utilizes Node.js, Express.js, MySQL and Handlebars.
 
-
 ## Demo
 
 Try the app for yourself on the [Heroku Platform](http://johnsburgers.herokuapp.com/).
