@@ -1,22 +1,22 @@
 <div id="container">
-<h1>Eat the Burgers!</h1>
+<h1>John's Burger Bar</h1>
 
-<h2>Your current orders!</h2>
+<h2>Your current orders:</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless this.devoured}}
       <li>
-        <div id="bunTop"></div>
+        <div id="bunTop">
+        {{this.burger_name}}
+        </div>
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
           <button id="order" type="submit">Eat up!</button>
         </form>
 
         {{> burgers/delete-burger}}
-        <div id="name">
-        {{this.burger_name}}
-        </div>
+        <div id="patty"></div>
         <div id="bunBottom"></div>
       </li>
     {{/unless}}
@@ -24,22 +24,22 @@
 </ul>
 <br>
 
-<h2>Burgers you have eaten!</h2>
+<h2>Burgers you have eaten:</h2>
 
 <ul>
   {{#each burgers}}
     {{#if this.devoured}}
       <li id="eaten">
-        <div id="bunTop"></div>
+        <div id="bunTop">
+          {{this.burger_name}}
+        </div>
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="false">
           <button id="order" type="submit">Order Again!</button>
         </form>
 
         {{> burgers/delete-burger}}
-        <div id="name">
-        {{this.burger_name}}
-        </div>
+        <div id="patty"></div>
         <div id="bunBottom"></div>
       </li>
     {{/if}}

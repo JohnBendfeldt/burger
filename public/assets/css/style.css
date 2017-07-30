@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Artifika');
+
 h1 {
   text-align: center;
 }
@@ -6,7 +8,7 @@ h1 {
   max-width: 980px;
   width: 90%;
   margin: 0px auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Artifika', serif;
   background-color: #DFDFDF;
   padding: 20px;
   border-radius: 20px;
@@ -28,6 +30,11 @@ li {
   border-top-left-radius: 36px;
   border-top-right-radius: 36px;
   margin-bottom: 2px;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 900;
+  padding-top: 5px;
+  font-size: 28px;
 }
 
 #bunBottom {
@@ -41,17 +48,12 @@ li {
   box-shadow: 5px 5px 20px black;
 }
 
-#name {
+#patty {
   width: 105%;
   background-color: brown;
-  margin-left:-2.5%;
   border-radius: 10px;
   height: 25px;
-  text-align: center;
-  color: whitesmoke;
-  padding-top: 5px;
-  font-weight: 900;
-  margin-top: 2px;
+  margin: 2px 0px 2px -2.5%;
 }
 
 #eaten {
@@ -85,6 +87,7 @@ li {
   color: whitesmoke !important;
   border: none !important;
   cursor: pointer;
+  font-weight: 900;
 }
 
 #order {
@@ -95,6 +98,7 @@ li {
   color: whitesmoke !important;
   border: none !important;
   cursor: pointer;
+  font-weight: 900;
 }
 
 #eat {
