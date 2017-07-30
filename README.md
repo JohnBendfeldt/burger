@@ -15,8 +15,8 @@ To run this app locally navigate to the directory you want and clone the reposit
 	git clone git@github.com:JohnBendfeldt/burger.git
 	
 Next, install the app dependencies:
-	cd burger
-	npm install
+		cd burger
+		npm install
 	
 Now you can run the server:
 
