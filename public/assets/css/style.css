@@ -32,6 +32,7 @@ li {
   border-radius: 20px;
   width: 95%;
   list-style-type: none;
+  text-transform: capitalize;
 }
 
 #bunTop {
