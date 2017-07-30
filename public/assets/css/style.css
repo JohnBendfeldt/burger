@@ -84,6 +84,7 @@ li {
   margin-left:-2.5%;
   color: whitesmoke !important;
   border: none !important;
+  cursor: pointer;
 }
 
 #order {
@@ -93,6 +94,7 @@ li {
   margin-left:-2.5%;
   color: whitesmoke !important;
   border: none !important;
+  cursor: pointer;
 }
 
 #eat {
@@ -100,6 +102,7 @@ li {
   width: 30%;
   font-weight: 900;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 #ca:hover, #eat:hover {
