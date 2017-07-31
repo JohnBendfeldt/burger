@@ -57,8 +57,12 @@
 
   <div class="form-group">
     <label for="eaten">Ordered or Eaten?</label><br>
-    <input type="radio" name="devoured" value="1"> Eaten!<br>
-    <input type="radio" name="devoured" value="0" checked> Place Order
+    <label for="burgers_eaten">
+      <input id="burgers_eaten" type="radio" name="devoured" value="1"> Eaten!<br>
+    </label>
+    <label for="burgers_ordered">
+      <input id="burgers_ordered" type="radio" name="devoured" value="0" checked> Place Order
+    </label>
   </div>
 
   <button id="eat" type="submit">Place Order/ Eat the Burger</button>
